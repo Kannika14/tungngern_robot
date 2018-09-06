@@ -1,0 +1,8 @@
+*** Variables ***
+${lo_general_timeout}    10
+${lo_sms_timeout}    60
+${lo_IPAppium}    127.0.0.1:4723
+${lo_PlatformName}    Android
+${lo_PlatformVersion}    7.1.1
+${lo_SerialNumber}    5200c6effe8954d3
+${lo_NoReset}     true

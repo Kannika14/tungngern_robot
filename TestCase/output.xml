@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180905 17:02:27.597" generator="Robot 3.0.4 (Python 2.7.15 on darwin)">
+<suite source="/Users/tr.inpha/Documents/tungngern_robot/TestCase/tungngernHome.robot" id="s1" name="tungngernHome">
+<test id="s1-t1" name="Test Tungngern">
+<kw name="Open Tunggern" library="tungngernCommon">
+<arguments>
+<arg>${lo_IPAppium}</arg>
+<arg>${lo_PlatformName}</arg>
+<arg>${lo_PlatformVersion}</arg>
+<arg>${lo_SerialNumber}</arg>
+</arguments>
+<kw name="Open Application Android" library="KeywordCommon">
+<arguments>
+<arg>${remoteUrl}</arg>
+<arg>${platformName}</arg>
+<arg>${platformVersion}</arg>
+<arg>${udid}</arg>
+<arg>com.ktb.merchant.tungngern</arg>
+<arg>com.ktb.merchant.tungngern.views.splashscreen.SplashActivity</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Open Test</arg>
+</arguments>
+<msg timestamp="20180905 17:02:27.921" level="INFO">Open Test</msg>
+<status status="PASS" endtime="20180905 17:02:27.921" starttime="20180905 17:02:27.921"></status>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://${remoteUrl}/wd/hub</arg>
+<arg>platformName=${platformName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>deviceName=${udid}</arg>
+<arg>udid=${udid}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>noReset=true</arg>
+</arguments>
+<status status="PASS" endtime="20180905 17:02:41.794" starttime="20180905 17:02:27.921"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Open Success</arg>
+</arguments>
+<msg timestamp="20180905 17:02:41.794" level="INFO">Open Success</msg>
+<status status="PASS" endtime="20180905 17:02:41.794" starttime="20180905 17:02:41.794"></status>
+</kw>
+<status status="PASS" endtime="20180905 17:02:41.794" starttime="20180905 17:02:27.920"></status>
+</kw>
+<status status="PASS" endtime="20180905 17:02:41.795" starttime="20180905 17:02:27.919"></status>
+</kw>
+<status status="PASS" endtime="20180905 17:02:41.795" critical="yes" starttime="20180905 17:02:27.919"></status>
+</test>
+<status status="PASS" endtime="20180905 17:02:41.796" starttime="20180905 17:02:27.600"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="tungngernHome" pass="1">tungngernHome</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
